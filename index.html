@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucas - Desarrollador Web Freelance</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #222;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px 50px 20px;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 30px;
+      border-bottom: 2px solid #3498db;
+      margin-bottom: 30px;
+    }
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: #ddd;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 2.8rem;
+      color: #3498db;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #222;
+      margin-bottom: 15px;
+      border-left: 5px solid #3498db;
+      padding-left: 10px;
+    }
+    p.lead {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 35px auto;
+      color: #555;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .services, .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .service-item, .portfolio-item {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      flex: 1 1 250px;
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+    .service-item:hover, .portfolio-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    }
+    .service-item h3, .portfolio-item h3 {
+      color: #2980b9;
+      margin-bottom: 12px;
+    }
+    .portfolio-item p {
+      color: #444;
+      font-size: 0.95rem;
+      min-height: 60px;
+    }
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+      margin-top: 50px;
+      border-top: 1px solid #ddd;
+      padding-top: 20px;
+    }
+    a.button-fiverr {
+      display: inline-block;
+      background-color: #1dbf73;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-top: 15px;
+    }
+    a.button-fiverr:hover {
+      background-color: #159c59;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .services, .portfolio {
+        flex-direction: column;
+      }
+      .service-item, .portfolio-item {
+        flex: 1 1 100%;
+      }
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Pon aquí tu foto o avatar -->
+    <img src="C:\Users\lucas\Documents\Lucas\IMG_20250625_170615.jpg" alt="Foto de Lucas" />
+    <h1>Lucas Jovellar</h1>
+    <p class="lead">Desarrollador web apasionado y freelance, activo y siempre con ganas de aprender y ayudar.</p>
+    <a href="https://www.fiverr.com/lucaswebdev_" target="_blank" class="button-fiverr" rel="noopener noreferrer">Visita mi perfil en Fiverr</a>
+  </header>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="services">
+      <article class="service-item">
+        <h3>Diseño y Desarrollo Web</h3>
+        <p>Creación de sitios web modernos, responsivos y optimizados para cualquier dispositivo, usando tecnologías como HTML5, CSS3, JavaScript y frameworks modernos.</p>
+      </article>
+      <article class="service-item">
+        <h3>Landing Pages Efectivas</h3>
+        <p>Diseño de páginas de aterrizaje atractivas y con alto índice de conversión para captar clientes y potenciar tu negocio.</p>
+      </article>
+      <article class="service-item">
+        <h3>Integración con CMS</h3>
+        <p>Configuración y personalización de sitios en WordPress, Wix o Shopify para facilitar la gestión de tu contenido.</p>
+      </article>
+      <article class="service-item">
+        <h3>Optimización SEO Básica</h3>
+        <p>Mejora del posicionamiento web para que tu página alcance mejor visibilidad en buscadores.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="portafolio">
+    <h2>Portafolio</h2>
+    <div class="portfolio">
+      <article class="portfolio-item">
+        <h3>Proyecto: Tienda Online</h3>
+        <p>Desarrollé un ecommerce completo con carrito de compra, pasarela de pagos y diseño personalizado adaptado a la marca.</p>
+      </article>
+      <article class="portfolio-item">
+        <h3>Proyecto: Blog Personal</h3>
+        <p>Creación de blog responsive con sistema de categorías, comentarios y optimización para SEO.</p>
+      </article>
+      <article class="portfolio-item">
+        <h3>Proyecto: Landing para App</h3>
+        <p>Landing page sencilla y moderna para promocionar una app móvil, con formulario de contacto integrado.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Quieres trabajar conmigo? Escríbeme a <a href="mailto:lucas.jovellarpec@gmail.com">lucas.jovellarpec@gmail.com</a></p>
+    <p>O visita mi perfil en Fiverr: <a href="https://www.fiverr.com/lucaswebdev_" target="_blank" rel="noopener noreferrer">fiverr.com/lucaswebdev_</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Lucas Jovellar - Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
